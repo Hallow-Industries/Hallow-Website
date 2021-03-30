@@ -1,0 +1,65 @@
+html {
+    font-family: 'Raleway', sans-serif;
+    background-color: #151515;
+}
+
+.nav-button {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 1.25rem;
+    letter-spacing: 0.2rem;
+}
+
+.nav-button:hover {
+    text-decoration: underline;
+}
+
+.navigation {
+    text-align: center;
+    z-index: 10;
+    position: absolute;
+    width: 101%;
+    left: -1%;
+    top: 94%;
+    height: 6%;
+    background-color: #111111;
+}
+
+#bg-opacity-map {
+    z-index: 9;
+    position: absolute;
+    width: 101%;
+    left: -1%;
+    top: 20%;
+    height: 75%;
+    background: linear-gradient(transparent, #070707);
+}
+
+#background {
+    position: fixed;
+    background: url("https://wallpapercave.com/wp/k4qVAMW.jpg");
+    width: 115%;
+    height: 115%;
+    left: -7.5%;
+    top: -20px;
+    filter: blur(3px);
+    z-index: 5;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#backsheet {
+    position: absolute;
+    z-index: 6;
+    width: 101%;
+    height: 500%;
+    top: 100%;
+    left: -1%;
+    background-color: #151515;
+}
+
+.title {
+    position: absolute;
+    top: 150%;
+}
