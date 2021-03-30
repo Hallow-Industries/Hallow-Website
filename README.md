@@ -1,6 +1,11 @@
 # Hallow-Website
 Website for Hallow Industries.
 
+### Information:
+This website is **unfinished**! You can view our progress here:
+</br>
+https://hallow-industries.github.io/Hallow-Website
+
 ### Developers:
 The **Hallow-Website** repository will be worked on by `@Yochran` and `@itsTohi` (*Web Development*).
 
