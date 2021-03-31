@@ -13,7 +13,6 @@ The **Hallow-Website** repository will be worked on by `@Yochran` and `@itsTohi`
 
 ### To Do:
   - Finish the title.
-  - Make parallax scroll effect smoother.
   - Add About, Services & Contact sections.
   - Finish styling.
   - Finish JavaScript.
