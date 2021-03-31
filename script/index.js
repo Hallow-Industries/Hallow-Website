@@ -1,10 +1,17 @@
-const background = document.getElementById("background");
+const navbar = document.getElementById("nav-bar");
+const backsheet = document.getElementById("backsheet");
 
-// Functions
-function parallax() {
-    background.style.top = Math.floor(-20 - 0.195 * window.scrollY) + "px";
-    background.style.filter = "blur(" + Math.floor(3 + 0.0195 * window.scrollY) + "px)"
+function scrollEffects() {
+    var offset = backsheet.offsetTop;
+
+    if (window.pageYOffset >= offset - 65) {
+        navbar.style.backgroundColor = "#111";
+    } else {
+        navbar.style.backgroundColor = "transparent";
+    }
+
+    console.log(offset);
+    console.log(window.pageYOffset);
 }
-// Listeners
-document.onscroll = () => { parallax(); }
-// Utils
+
+document.onscroll = () => { scrollEffects(); }

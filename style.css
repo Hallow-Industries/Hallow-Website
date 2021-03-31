@@ -1,65 +1,116 @@
 html {
-    font-family: 'Raleway', sans-serif;
-    background-color: #151515;
-}
-
-.nav-button {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #ffffff;
-    font-size: 1.25rem;
-    letter-spacing: 0.2rem;
-}
-
-.nav-button:hover {
-    text-decoration: underline;
-}
-
-.navigation {
     text-align: center;
-    z-index: 10;
-    position: absolute;
-    width: 101%;
-    left: -1%;
-    top: 94%;
-    height: 6%;
-    background-color: #111111;
+    font-family: apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    scroll-behavior: smooth;
 }
 
-#bg-opacity-map {
-    z-index: 9;
-    position: absolute;
-    width: 101%;
-    left: -1%;
-    top: 20%;
-    height: 75%;
-    background: linear-gradient(transparent, #070707);
+h1, h2, a {
+    font-weight: 200;
+    letter-spacing: 1px;
 }
 
 #background {
+    width: 101%;
+    height: 101%;
+    top: -1%;
+    left: -1%;
     position: fixed;
-    background: url("https://wallpapercave.com/wp/k4qVAMW.jpg");
-    width: 115%;
-    height: 115%;
-    left: -7.5%;
-    top: -20px;
-    filter: blur(3px);
-    z-index: 5;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background: linear-gradient(to right,#59c94a, #1d4119);
+    z-index: 4;
+}
+
+#opacity-grad {
+    position: absolute;
+    width: 101%;
+    height: 32.5%;
+    top: 70%;
+    left: -1%;
+    background: linear-gradient(transparent, #1d4119);
+    z-index: 6;
 }
 
 #backsheet {
-    position: absolute;
-    z-index: 6;
     width: 101%;
-    height: 500%;
-    top: 100%;
+    height: 101%;
+    top: 102%;
     left: -1%;
-    background-color: #151515;
+    background-color: #252525;
+    position: absolute;
+    z-index: 5;
 }
 
-.title {
+#nav-button {
+    letter-spacing: 1px;
+    transition: 0.5s;
+    font-size: 1.4rem;
+    color: #cecece;
+}
+
+#nav-button:hover {
+    letter-spacing: 2px;
+    transition: 0.5s;
+    color: #ffffff;
+}
+
+#home-button {
+    position: relative;
+    left: -20%;
+    letter-spacing: 1px;
+    transition: 0.5s;
+    font-size: 1.4rem;
+    color: #dddeee;
+}
+
+#home-button:hover {
+    letter-spacing: 2px;
+    transition: 0.5s;
+    color: #ffffff;
+}
+
+#nav-bar {
+    z-index: 15;
+    position: fixed;
+    top: -0.1%;
+    left: -1%;
+    width: 130%;
+    background-color: transparent;
+    transition: 0.1s;
+}
+
+#title {
+    color: #fff;
+    z-index: 7;
     position: absolute;
-    top: 150%;
+    text-align: left;
+    width: 50%;
+    height: 20%;
+    top: 37.5%;
+    left: 25%;
+}
+
+#title h1 {
+    font-size: 3rem;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+
+#title h1:hover {
+    letter-spacing: 3px;
+    transition: 0.5s;
+}
+
+#title h2 {
+    letter-spacing: 1px;
+    transition: 0.5s;
+    font-size: 1.75rem;
+}
+
+#title h2:hover {
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+#home {
+    position: absolute;
+    top: 0%;
 }
