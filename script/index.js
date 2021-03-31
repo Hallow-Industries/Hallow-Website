@@ -1,20 +1,17 @@
-const background = document.getElementById("background");
 const navbar = document.getElementById("nav-bar");
-const navbar2 = document.getElementById("nav-bar-2");
+const backsheet = document.getElementById("backsheet");
 
-// Functions
-function parallax() {
-    background.style.top = Math.floor(-20 - 0.2575 * window.scrollY) + "px";
-    background.style.filter = "blur(" + Math.floor(5 + 0.02575 * window.scrollY) + "px)"
+function scrollEffects() {
+    var offset = backsheet.offsetTop;
 
-    var offset = navbar.offsetTop;
-
-    if (window.pageYOffset >= offset) {
-        navbar2.style.top = "0.05%";
+    if (window.pageYOffset >= offset - 65) {
+        navbar.style.backgroundColor = "#111";
     } else {
-        navbar2.style.top = "125%";
+        navbar.style.backgroundColor = "transparent";
     }
+
+    console.log(offset);
+    console.log(window.pageYOffset);
 }
-// Listeners
-document.onscroll = () => { parallax(); }
-// Utils
+
+document.onscroll = () => { scrollEffects(); }

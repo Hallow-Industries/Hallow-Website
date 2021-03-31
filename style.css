@@ -1,79 +1,116 @@
 html {
-    font-family: 'Raleway', sans-serif;
-    background-color: #151515;
-}
-
-html h1 {
-    color: #ffffff;
-    font-size: 5rem;
-}
-
-html h2 {
-    font-size: 3.5rem;
-    color: #ffffff;
-}
-
-.nav-button {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #ffffff;
-    font-size: 1.25rem;
-    letter-spacing: 0.2rem;
-}
-
-.nav-button:hover {
-    text-decoration: underline;
-}
-
-#nav-bar {
     text-align: center;
-    z-index: 15;
-    position: absolute;
-    width: 101%;
-    left: -1%;
-    top: 94%;
-    background-color: #101010;
+    font-family: apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    scroll-behavior: smooth;
 }
 
-#nav-bar-2 {
-    text-align: center;
-    z-index: 15;
-    position: fixed;
-    width: 101%;
-    left: -1%;
-    top: 125%;
-    background-color: #101010;
-}
-
-#bg-opacity-map {
-    z-index: 14;
-    position: absolute;
-    width: 101%;
-    left: -1%;
-    top: 25%;
-    height: 75%;
-    background: linear-gradient(transparent, #070707);
+h1, h2, a {
+    font-weight: 200;
+    letter-spacing: 1px;
 }
 
 #background {
+    width: 101%;
+    height: 101%;
+    top: -1%;
+    left: -1%;
     position: fixed;
-    background: url("https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80");
-    width: 115%;
-    height: 115%;
-    left: -7.5%;
-    top: -20px;
-    filter: blur(5px);
+    background: linear-gradient(to right,#59c94a, #1d4119);
     z-index: 4;
-    background-size: cover;
-    background-repeat: no-repeat;
+}
+
+#opacity-grad {
+    position: absolute;
+    width: 101%;
+    height: 32.5%;
+    top: 70%;
+    left: -1%;
+    background: linear-gradient(transparent, #1d4119);
+    z-index: 6;
 }
 
 #backsheet {
-    position: absolute;
-    z-index: 10;
     width: 101%;
-    height: 250%;
-    top: 94%;
+    height: 101%;
+    top: 102%;
     left: -1%;
-    background-color: #222222;
+    background-color: #252525;
+    position: absolute;
+    z-index: 5;
+}
+
+#nav-button {
+    letter-spacing: 1px;
+    transition: 0.5s;
+    font-size: 1.4rem;
+    color: #cecece;
+}
+
+#nav-button:hover {
+    letter-spacing: 2px;
+    transition: 0.5s;
+    color: #ffffff;
+}
+
+#home-button {
+    position: relative;
+    left: -20%;
+    letter-spacing: 1px;
+    transition: 0.5s;
+    font-size: 1.4rem;
+    color: #dddeee;
+}
+
+#home-button:hover {
+    letter-spacing: 2px;
+    transition: 0.5s;
+    color: #ffffff;
+}
+
+#nav-bar {
+    z-index: 15;
+    position: fixed;
+    top: -0.1%;
+    left: -1%;
+    width: 130%;
+    background-color: transparent;
+    transition: 0.1s;
+}
+
+#title {
+    color: #fff;
+    z-index: 7;
+    position: absolute;
+    text-align: left;
+    width: 50%;
+    height: 20%;
+    top: 37.5%;
+    left: 25%;
+}
+
+#title h1 {
+    font-size: 3rem;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+
+#title h1:hover {
+    letter-spacing: 3px;
+    transition: 0.5s;
+}
+
+#title h2 {
+    letter-spacing: 1px;
+    transition: 0.5s;
+    font-size: 1.75rem;
+}
+
+#title h2:hover {
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+#home {
+    position: absolute;
+    top: 0%;
 }
