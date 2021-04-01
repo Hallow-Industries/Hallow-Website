@@ -4,7 +4,7 @@ html {
     scroll-behavior: smooth;
 }
 
-h1, h2, a {
+h1, h2, h3, a {
     font-weight: 200;
     letter-spacing: 1px;
 }
@@ -16,7 +16,7 @@ h1, h2, a {
     left: -1%;
     position: fixed;
     background: linear-gradient(to right,#59c94a, #1d4119);
-    z-index: 4;
+    z-index: 1;
 }
 
 #opacity-grad {
@@ -26,7 +26,7 @@ h1, h2, a {
     top: 70%;
     left: -1%;
     background: linear-gradient(transparent, #1d4119);
-    z-index: 6;
+    z-index: 2;
 }
 
 #backsheet {
@@ -36,7 +36,7 @@ h1, h2, a {
     left: -1%;
     background-color: #252525;
     position: absolute;
-    z-index: 5;
+    z-index: 2;
 }
 
 #nav-button {
@@ -80,7 +80,7 @@ h1, h2, a {
 #title {
     color: #fff;
     z-index: 7;
-    position: absolute;
+    position: fixed;
     text-align: left;
     width: 50%;
     height: 20%;
@@ -113,4 +113,72 @@ h1, h2, a {
 #home {
     position: absolute;
     top: 0%;
+}
+
+#about {
+    position: absolute;
+    color: #fff;
+    z-index: 9;
+    text-align: center;
+    width: 101%;
+    left: -1%;
+    top: 102%;
+    background-color: #222222;
+    box-shadow: 0 16px 8px 5px rgba(0,0,0,0.35), 0 6px 5px 0 rgba(0,0,0,0.35);
+}
+
+#about h1 {
+    font-size: 3rem;
+    letter-spacing: 1px;
+    transition: 0.5s;
+    text-decoration: underline;
+}
+
+#about h1:hover, #about h3:hover {
+    letter-spacing: 3px;
+    transition: 0.5s;
+}
+
+#about h2 {
+    font-size: 1.25rem;
+}
+
+#about h3 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    transition: 0.5s;
+    text-decoration: underline;
+    color: #4cf336;
+}
+
+#about p {
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+#about-cheats {
+    position: relative;
+    max-width: 23%;
+    left: 2%;
+}
+
+#about-plugins {
+    max-width: 23%;
+    position: absolute;
+    top: 51.65%;
+    left: 26%;
+}
+
+#about-software {
+    max-width: 23%;
+    position: absolute;
+    top: 51.65%;
+    left: 51%;
+}
+
+#about-websites {
+    max-width: 23%;
+    position: absolute;
+    top: 51.65%;
+    left: 75%;
 }
