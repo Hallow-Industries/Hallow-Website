@@ -12,9 +12,12 @@ function scrollEffects() {
     } else {
         navbar.style.backgroundColor = "transparent";
     }
+}
 
-    console.log(offset);
-    console.log(window.pageYOffset);
+function creditClick() {
+    const url = "https://yochran.tohi.dev/";
+    window.open(url, "_blank");
 }
 
 document.onscroll = () => { scrollEffects(); }
+document.getElementById("credit-link").onclick = () => { creditClick(); }
