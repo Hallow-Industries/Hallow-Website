@@ -158,28 +158,28 @@ h1, h2, h3, a {
     position: absolute;
     max-width: 23%;
     top: 80%;
-    left: 2%;
+    left: 22.5%;
 }
 
 #about-plugins {
     max-width: 23%;
     position: absolute;
     top: 80%;
-    left: 26%;
+    left: 55%;
 }
 
 #about-software {
     max-width: 23%;
     position: absolute;
-    top: 80%;
-    left: 51%;
+    top: 185%;
+    left: 22.5%;
 }
 
 #about-websites {
     max-width: 23%;
     position: absolute;
-    top: 80%;
-    left: 75%;
+    top: 185%;
+    left: 55%;
 }
 
 #products {
@@ -189,7 +189,8 @@ h1, h2, h3, a {
     text-align: center;
     width: 101%;
     left: -1%;
-    top: 220%;
+    top: 315%;
+    max-height: 125%;
     background-color: #191919;
 }
 
@@ -218,7 +219,7 @@ h1, h2, h3, a {
     text-align: center;
     width: 101%;
     left: -1%;
-    top: 350%;
+    top: 450%;
     background-color: #222222;
     max-height: 40%;
     min-height: 40%;
@@ -231,7 +232,7 @@ h1, h2, h3, a {
     text-align: center;
     width: 101%;
     left: -1%;
-    top: 510%;
+    top: 615%;
     background: linear-gradient(#151515, #0a0a0a);
     max-height: 63.5%;
     min-height: 63.5%;
