@@ -10,9 +10,9 @@ html {
 }
 
 #background {
-    background: linear-gradient(45deg, #ff0000, #ff4500, #ffff00, #66cd00, #27408b, #660066, #ff0000, #ff4500);
+    background: linear-gradient(45deg, #000, #151515, #272727, #3d3d3e, #454546, #555555, #454546, #3d3d3e, #272727, #151515, #000);
     background-size: 1500% 100%;
-    animation: gradient 60s linear infinite;
+    animation: gradient 10s linear infinite;
     animation-iteration-count: infinite;
     position: absolute;
     width: 100%;
@@ -275,4 +275,3 @@ html {
     50% {top: 85%}
     100% {top: 80%}
 }
-
