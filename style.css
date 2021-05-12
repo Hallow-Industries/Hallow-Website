@@ -3,11 +3,30 @@
     margin: 0;
     padding: 0;
     font-family: 'Kumbh Sans', sans-serif;
+}
+
+html { 
     background: #131313;
 }
 
+#background {
+    background: linear-gradient(45deg, #ff0000, #ff4500, #ffff00, #66cd00, #27408b, #660066, #ff0000, #ff4500);
+    background-size: 1500% 100%;
+    animation: gradient 60s linear infinite;
+    animation-iteration-count: infinite;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+
+@keyframes gradient {
+    0% {background-position: 0%;}
+    100% {background-position: 100%;}
+}
+
 .navbar {
-    background: #131313;
+    background: transparent;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -196,6 +215,64 @@
     }
 }
 
-.title_card {
-    color: #fff;
+.title_separator {
+    background: #fff;
+    position: absolute;
+    top: 37.5%;
+    left: 47.75%;
+    width: 0.5%;
+    height: 22.5%;
 }
+
+.title_card {
+    font-size: 4.5rem;
+    color: #fff;
+    position: absolute;
+    top: 40%;
+    left: 22.5%;
+    text-align: left;
+    animation-name: title;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+.title_card_description {
+    font-size: 3.5rem;
+    color: #fff;
+    position: absolute;
+    top: 42%;
+    left: 52.5%;
+    text-align: left;
+    animation-name: description;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+.scroll_logo {
+    position: absolute;
+    top: 80%;
+    left: 46%;
+    font-size: 5rem;
+    color: #8cff08;
+    animation-name: scroll-arrow;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes title {
+    0% {top: -10%}
+    100% {top: 40%}
+}
+
+@keyframes description {
+    0% {top: 110%}
+    100% {top: 42%}
+}
+
+@keyframes scroll-arrow {
+    0% {top: 80%}
+    50% {top: 85%}
+    100% {top: 80%}
+}
+
